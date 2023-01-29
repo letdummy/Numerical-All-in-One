@@ -10,10 +10,10 @@ x = []
 y = []
 
 # only change this value
-m = 9.9
-c = 12.7
+m = 9.7
+c = 11.7
 t = 0
-t1 = 0.545
+t1 = 0.485
 
 # specific equations
 print("========== Specific Numerical Method ==========\n")
@@ -27,7 +27,7 @@ while itr < 20:
     # calculate speed and time
     vt1 = vt + (g - (round(c / m, 2) * vt)) * round((t1 - t), 3)
     t = round(t1, 3)
-    t1 = round(t1 + 0.545, 3)
+    t1 = round(t1 + 0.485, 3)
     itr = itr + 1
     # show current speed and time
     print("=========================")
